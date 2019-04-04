@@ -1,0 +1,35 @@
+html {
+    height: 100%
+}
+
+body {
+    background: url(../images/quiz.jpg);
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 150px;
+    height: 150px;
+    padding-top: 50px;
+}
+
+button {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.container {
+    background-color: lightblue;
+    text-align: center;
+    height: 100%;
+    
+  
+}
+
+
+
+.form-inline > * {
+    margin:5px 3px;
+ }
