@@ -1,4 +1,4 @@
-var number = 90;
+var number = 60;
 var intervalId;
 var ans = 0;
 var wrongAns = 0;
@@ -17,8 +17,13 @@ function decrement() {
     number--;
     $(".time-left").html("<h2>Time Remaining: " + number + "<h2>");
     if (number === 0) {
+        handleClick();
         stop();
-        //go to results div
+        $(".doneBtn").hide();
+        $(".quizContainer").hide();
+        $(".done").html("<h1>Time's Up!</h1>");
+        $(".answers").append("Correct Answers: ", ans);
+        $(".wrongAnswers").append("Incorrect Answers: ", wrongAns);
     }
 
 }

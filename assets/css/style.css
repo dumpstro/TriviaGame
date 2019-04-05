@@ -32,8 +32,12 @@ button {
     margin-bottom: 25px;
 }
 
-
-
 .radio-inline > * {
     margin:5px 3px;
+ }
+
+ .answers,
+ .wrongAnswers {
+     font-size: 20px;
+     font-weight: bold;
  }
