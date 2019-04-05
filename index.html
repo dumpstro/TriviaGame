@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
@@ -19,24 +20,22 @@
             <button type="button">Start!</button>
         </div>
         <div class="quizContainer">
-            <div class="stopwatch">
-                <div>Stopwatch Goes Here</div>
-            </div>
+            <div class="time-left"></div> 
             <div class="container" id="question1">
                 <h4>Which legendary screen actor will be forever remembered for his role as Frank Lambert on ABC's hit sitcom
                 Step-by-Step?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q1opt1">Ted Danson
+                        <input type="radio" id="q1opt1" name="btn1" value="incorrect">Ted Danson
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q1opt2">George C. Scott
+                        <input type="radio" id="q1opt2" name="btn1" value="incorrect">George C. Scott
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q1opt3">Bob Saget
+                        <input type="radio" id="q1opt3" name="btn1" value="incorrect">Bob Saget
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q1opt4">Patrick Duffy
+                        <input type="radio" id="q1opt4" name="btn1" value="correct">Patrick Duffy
                     </label>
                 </form>
             </div>
@@ -44,16 +43,16 @@
                 <h4>In how many parsecs did Han Solo complete the kessel run?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q2opt1">162
+                        <input type="radio" id="q2opt1" name="btn2" value="incorrect">162
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q2opt2">5
+                        <input type="radio" id="q2opt2" name="btn2" value="incorrect">5
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q2opt3">12
+                        <input type="radio" id="q2opt3" name="btn2" value="correct">12
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q2opt4">11
+                        <input type="radio" id="q2opt4" name="btn2" value="incorrect">11
                     </label>
                 </form>
             </div>
@@ -61,16 +60,16 @@
                 <h4>How long is a giraffe's laryngeal nerve?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q3opt1">Under a foot
+                        <input type="radio" id="q3opt1" name="btn3" value="incorrect">Under a foot
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q3opt2">3 feet
+                        <input type="radio" id="q3opt2" name="btn3" value="incorrect">3 feet
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q3opt3">6 feet
+                        <input type="radio" id="q3opt3" name="btn3" value="incorrect"  >6 feet
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q3opt4">Over 12 feet
+                        <input type="radio" id="q3opt4" name="btn3" value="correct">Over 12 feet
                     </label>
                 </form>
             </div>
@@ -78,16 +77,16 @@
                 <h4>The world's tallest building stands in which country?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q4opt1">United Arab Emirates
+                        <input type="radio" id="q4opt1" name="btn4" value="correct">United Arab Emirates
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q4opt2">Taiwan
+                        <input type="radio" id="q4opt2" name="btn4" value="incorrect">Taiwan
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q4opt3">China
+                        <input type="radio" id="q4opt3" name="btn4" value="incorrect">China
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q4opt4">Saudi Arabia
+                        <input type="radio" id="q4opt4" name="btn4" value="incorrect">Saudi Arabia
                     </label>
                 </form>
             </div>
@@ -95,16 +94,16 @@
                 <h4>Which band successfully sued Led Zeppelin over the rights to the intro of Stairway to Heaven?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q5opt1">Black Sabbath
+                        <input type="radio" id="q5opt1" name="btn5" value="incorrect">Black Sabbath
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q5opt2">Deep Purple
+                        <input type="radio" id="q5opt2" name="btn5" value="incorrect">Deep Purple
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q5opt3">Spirit
+                        <input type="radio" id="q5opt3" name="btn5" value="correct">Spirit
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q5opt4">Hawkwind
+                        <input type="radio" id="q5opt4" name="btn5" value="incorrect">Hawkwind
                     </label>
                 </form>
             </div>
@@ -112,16 +111,16 @@
                 <h4>What is the most venomous animal in the world?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt1">Box Jellyfish
+                        <input type="radio" id="q6opt1" name="btn6" value="correct">Box Jellyfish
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt2">Death Stalker Scorpion
+                        <input type="radio" id="q6opt2" name="btn6" value="incorrect">Death Stalker Scorpion
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt3">Brown Recluse Spider
+                        <input type="radio" id="q6opt3" name="btn6" value="incorrect">Brown Recluse Spider
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt4">Blue Ringed Octopus
+                        <input type="radio" id="q6opt4" name="btn6" value="incorrect">Blue Ringed Octopus
                     </label>
                 </form>
             </div>
@@ -129,40 +128,45 @@
                 <h4>Which 1968 song became a hit for the unsettling ukelele player Tiny Tim? </h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q7opt1">You Are My Sunshine
+                        <input type="radio" id="q7opt1" name="btn7" value="incorrect">You Are My Sunshine
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt2">Muswell Hillbilly 
+                        <input type="radio" id="q7opt2" name="btn7" value="incorrect">Muswell Hillbilly 
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt3">Tiptoe Through the Tulips
+                        <input type="radio" id="q7opt3" name="btn7" value="correct">Tiptoe Through the Tulips
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt4">Spooky
+                        <input type="radio" id="q7opt4" name="btn7" value="incorrect">Spooky
                     </label>
                 </form>
             </div>
-            <div class="container" id="question8">
+            <div class="container" id="question8" name="btn">
                 <h4>Which iconic screen actor will be forever remembered for his role as Bobby Ewing on Dallas?</h4>
                 <form>
                     <label class="radio-inline">
-                        <input type="radio" name="q7opt1">Alan Alda
+                        <input type="radio" id="q8opt1" name="btn8" value="incorrect">Alan Alda
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt2">John Ritter
+                        <input type="radio" id="q8opt2" name="btn8" value="incorrect">John Ritter
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt3">Bob Crane
+                        <input type="radio" id="q8opt3" name="btn8"value="incorrect">Bob Crane
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="q6opt4">Patrick Duffy
+                        <input type="radio" id="q8opt4" name="btn8" value="correct">Patrick Duffy
                     </label>
                 </form>
             </div>
+            <div class="doneBtn">
+                    <button class="submit" onclick="return handleClick();" type="submit">Done</button>
+            </div>
         </div>
-        <div class="doneBtn">
-            <button type="button">Done</button>
-        </div>
+        <div class="done"></div>
+        <div class="answers"></div>
+        <div class="wrongAnswers"></div>
+
+    
     </div>
 
 

@@ -28,8 +28,12 @@ button {
   
 }
 
+.time-left {
+    margin-bottom: 25px;
+}
 
 
-.form-inline > * {
+
+.radio-inline > * {
     margin:5px 3px;
  }
